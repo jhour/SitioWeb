@@ -8,6 +8,9 @@
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      
+    <!--Bootstrap
+    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
     <!--FUENTE DE LETRA - EB Garamond-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,100 +27,38 @@
 <body class="colorBody">
     <!--BARRA DE NAVEGACIÓN-->
     <div>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"> 
-                <img src="/imagenes/logo.PNG" alt="" height="100"> 
-              </a>
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html" >NOSOTROS</a> 
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="modal"  data-bs-target="#reservaEvento">RESERVA DE EVENTOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#pedirAhora">PEDIR AHORA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
-                  </li>
-                  <a href="accederCuenta.html">
-                    <button type="button" class="btn btn-primary btn-lg tipoLetraBoton">INICIAR SESIÓN</button>
-                  </a>
-                  
-                </ul>
-              </div>
+      <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="indexConSesion.php"> 
+              <img src="imagenes/logo.PNG" alt="" height="100"> 
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotrosConSesion.php" >NOSOTROS</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="reservarEventos.php">RESERVA DE EVENTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="delivery-Platos.php">PEDIR AHORA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="indexConSesion.php#contacto">CONTACTO</a>
+                </li>
+                <a href="miCuentaReservas.php">
+                  <button type="button" class="btn btn-primary btn-lg tipoLetraBoton">MI CUENTA</button>
+                </a>
+                
+              </ul>
             </div>
-          </nav>
-    </div>
-
-    <!--VENTANA EMERGENTE-->
-     <!-- Button trigger modal -->
-      
-     <!-- Modal RESERVAR EVENTO-->
-     <div class="modal fade" id="reservaEvento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title formatoInformacion" id="reservaEvento">INFORMACIÓN</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
-            <p class="centrarTexto negritaTextoNosotros tamañoLetraTitulo letraEB">
-              ¡Inicie sesión! 
-              <br>
-            </p>
-            <p class="centrarTexto tamañoLetraCuerpo letraRoboto">
-            Para acceder a diferentes descuentos 
-            se le recomienta registrarse en
-            nuestra página.
-            </p>
-          </div>
-          <a class="sinSubrayado" href="accederCuenta.html" >
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button type="button" class="btn btn-primary letraRoboto negritaLetra botonOvalado" id="acceder" >INICIAR SESIÓN</button> <br>
-          </div> 
-          </a>
-          
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal PEDIR AHORA-->
-    <div class="modal fade" id="pedirAhora" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title formatoInformacion" id="pedirAhora">INFORMACIÓN</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p class="centrarTexto negritaTextoNosotros tamañoLetraTitulo letraEB">
-              ¡Inicie sesión! 
-              <br>
-            </p>
-            <p class="centrarTexto tamañoLetraCuerpo letraRoboto">
-            Para acceder a diferentes descuentos 
-            se le recomienta registrarse en
-            nuestra página.
-            </p>
-          </div>
-          <a class="sinSubrayado" href="accederCuenta.html" >
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <button type="button" class="btn btn-primary letraRoboto negritaLetra botonOvalado" id="acceder" >INICIAR SESIÓN</button> <br>
-          </div> 
-          </a> 
-        </div>
-      </div>
-    </div>
-
-
+        </nav>
+  </div>
     <!--PRESENTACION DE MISION VISION-->
     <main>
       <br>
@@ -125,12 +66,12 @@
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                   <div class="card">
-                    <img src="/imagenes/Restaurante 2.jpg" class="card-img-top" alt="...">
+                    <img src="imagenes/Restaurante 2.jpg" class="card-img-top" alt="...">
                   </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="/imagenes/Restaurante.PNG" class="card-img-top" alt="..."> 
+                        <img src="imagenes/Restaurante.PNG" class="card-img-top" alt="..."> 
                     </div>
                 </div>
             </div>
@@ -187,9 +128,8 @@
         <p>Recreo campestre Ponceca Ecoturismo. Todos los derechos reservados 2022.</p> 
     </footer>
 
-    <!--JS-->
+     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-
 </body>
 </html>

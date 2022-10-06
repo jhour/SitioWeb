@@ -9,9 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!--FUENTE DE LETRA - EB Garamond-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;900&family=Tangerine&display=swap" rel="stylesheet">
 
     <!--codigo para que la página cargue rápido-->
     <link rel="preload" href="interfaz.css" as="style">
@@ -29,8 +26,8 @@
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="indexConSesion.html"> 
-                <img src="/imagenes/logo.PNG" alt="" height="100"> 
+              <a class="navbar-brand" href="indexConSesion.php"> 
+                <img src="imagenes/logo.PNG" alt="" height="100"> 
               </a>
               
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,18 +36,18 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="nosotrosConSesion.html" >NOSOTROS</a> 
+                    <a class="nav-link" href="nosotrosConSesion.php" >NOSOTROS</a> 
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="reservarEventos.html">RESERVA DE EVENTOS</a>
+                    <a class="nav-link" href="reservarEventos.php">RESERVA DE EVENTOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="delivery-Platos.html">PEDIR AHORA</a>
+                    <a class="nav-link" href="delivery-Platos.php">PEDIR AHORA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                    <a class="nav-link" href="indexConSesion.php#contacto">CONTACTO</a>
                   </li>
-                  <a href="miCuentaReservas.html">
+                  <a href="miCuentaReservas.php">
                     <button type="button" class="btn btn-primary btn-lg tipoLetraBoton botonPedirAhora botonPedir radioBoton">MI CUENTA</button>
                   </a>
                   
@@ -65,9 +62,9 @@
             <div class="row p-0">
                 <div class="col-9 col-sm-8 col-md-7 col-lg-6 p-0">
                     <div class="row">
-                        <div class="col-4 p-0">
+                        <div class="col-4 bg-white p-0">
                             <div class="d-grid gap-2">
-                                <a class="btn btn-secondary text-white border border-info" href="evento-Platos.html" role="button">
+                                <a class="btn border border-info" href="delivery-Platos.php" role="button">
                                     <b>Platos</b>
                                     <img src="images/comer.png" class="img-fluid" alt="comer" width="30">
                                 </a>                            
@@ -75,15 +72,15 @@
                         </div>
                         <div class="col-4 p-0 bg-white">
                             <div class="d-grid gap-2">
-                                <a class="btn btn-white border border-info" href="evento-Entrada.html" role="button">
+                                <a class="btn border border-info" href="delivery-Entrada.php" role="button">
                                     <b>Entrada</b>
                                     <img src="images/postre.png" class="img-fluid" alt="postre" width="30">
                                 </a>                            
                             </div>
                         </div>
-                        <div class="col-4 p-0 bg-white">
+                        <div class="col-4 p-0">
                             <div class="d-grid gap-2">
-                                <a class="btn btn-white border border-info" href="evento-Bebidas.html" role="button">
+                                <a class="btn btn-secondary text-white border border-info" href="delivery-Bebidas.php" role="button">
                                     <b>Bebidas</b>
                                     <img src="images/espiritu.png" class="img-fluid" alt="Bebidas" width="30">
                                 </a>                            
@@ -175,7 +172,7 @@
                                 </div>
                             </div>
                             <div class="container text-center">
-                                <a class="btn btn-success rounded-3 border border-info text-white fs-5" href="reservarEventosPagos.html" role="button">
+                                <a class="btn btn-success rounded-3 border border-info text-white fs-5" href="pagarPedido.php" role="button">
                                     <b>¡PAGAR AHORA!</b>
                                 </a> 
                             </div>
@@ -191,11 +188,10 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/polladaTradicional.JPG" class="card-img-top img-thumbnail rounded-3" alt="polladaTradicional">
+                        <img src="images/bebidas/cocaCola.jpg" class="card-img-top img-thumbnail rounded-3" alt="cocaCola">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>POLLADA TRADICIONAL</b></h5>
-                                <p class="card-text">Pollo frito a presion, mote, papa, porcion cremas.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>GASEOSA COCA COLA 2.25L</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -231,7 +227,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 19.00</b> 
+                                    <b>S/ 10.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -240,11 +236,11 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/polladaEspecial.jpg" class="card-img-top img-thumbnail rounded-3" alt="polladaEspecial">
+                        <img src="images/bebidas/incaKola.JPG" class="card-img-top img-thumbnail rounded-3" alt="incaKola">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>POLLADA ESPECIAL</b></h5>
-                                <p class="card-text">Pollo frito a presion, choclo, ensalada, palta, aliño, cremas.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>GASEOSA INCA KOLA 
+                                    2.25L</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -257,7 +253,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 25.00</b> 
+                                    <b>S/ 9.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -266,11 +262,11 @@
                 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/chicharronEspecial.JPG" class="card-img-top img-thumbnail rounded-3" alt="chicharronEspecial">
+                        <img src="images/bebidas/bigCola.jpg" class="card-img-top img-thumbnail rounded-3" alt="bigCola">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>CHICHARRON ESPECIAL</b></h5>
-                                <p class="card-text">Cerdo incluye costillas, papa, choclo, aliño transparente.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>GASEOSA BIG COLA 
+                                    2.25L</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -283,7 +279,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 29.00</b> 
+                                    <b>S/ 8.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -292,11 +288,11 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/Chicharron.jpg" class="card-img-top img-thumbnail rounded-3" alt="chicharron">
+                        <img src="images/bebidas/zumoPiña.JPG" class="card-img-top img-thumbnail rounded-3" alt="zumoPiña">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>CHICHARRON TRADICIONAL</b></h5>
-                                <p class="card-text">Cerdo no incluye costilla, papa, mote, cebolla, tomate, hierva buena.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>ZUMO DE PIÑA 
+                                    1L</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -309,7 +305,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 23.00</b> 
+                                    <b>S/ 10.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -318,11 +314,11 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/chicharronTrucha.JPG" class="card-img-top img-thumbnail rounded-3" alt="chicharronTrucha">
+                        <img src="images/bebidas/zumoZandilla.JPG" class="card-img-top img-thumbnail rounded-3" alt="zumoZandilla">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>CHICHARRON DE TRUCHA</b></h5>
-                                <p class="card-text">Filete de trucha 400 gramos, yuca frita, zarza criolla, ensalada.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>ZUMO DE SANDILLA
+                                    1L</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -335,7 +331,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 25.00</b> 
+                                    <b>S/ 10.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -344,11 +340,11 @@
                 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/truchaEspecial.JPG" class="card-img-top img-thumbnail rounded-3" alt="truchaEspecial">
+                        <img src="images/bebidas/zumoManzana.JPG" class="card-img-top img-thumbnail rounded-3" alt=zumoManzana">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>TRUCHA ESPECIAL</b></h5>
-                                <p class="card-text">Trucha 500 gramos, arroz, papa frita, precocidos, ensalada, palta.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>ZUMO DE MANZANA
+                                    1L</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -361,7 +357,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 24.00</b> 
+                                    <b>S/ 10.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -370,11 +366,10 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/truchaVapor.JPG" class="card-img-top img-thumbnail rounded-3" alt="truchaVapor">
+                        <img src="images/bebidas/hidromielOroDulce.jpg" class="card-img-top img-thumbnail rounded-3" alt="hidromielOroDulce">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>TRUCHA A VAPOR</b></h5>
-                                <p class="card-text">Trucha 500 gramos, papa cocida, arroz, precocidos, ensalada, palta.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>HIDROMIEL ORO DULCE</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -387,7 +382,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 24.00</b> 
+                                    <b>S/ 20.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -396,11 +391,10 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/truchaParrilla.JPG" class="card-img-top img-thumbnail rounded-3" alt="truchaParrilla">
+                        <img src="images/bebidas/hidromielSantaRosa.JPG" class="card-img-top img-thumbnail rounded-3" alt="chocloQueso">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>TRUCHA A LA PARILLA</b></h5>
-                                <p class="card-text">Trucha 500 gramos, papa cocida, choclo, precocidos, ensalada, palta .</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>HIDROMIEL SANTA ROSA</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -413,7 +407,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 25.00</b> 
+                                    <b>S/ 20.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -422,11 +416,10 @@
                 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/cuyChactado.jpg" class="card-img-top img-thumbnail rounded-3" alt="cuyChactado">
+                        <img src="images/bebidas/hidromielMarquez.JPG" class="card-img-top img-thumbnail rounded-3" alt="hidromielMarquez">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>CUY CHACTADO</b></h5>
-                                <p class="card-text">Cuy dorado, papa sancochada, mote, lechuga, tomate, brocoli, pepino.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>HIDROMIEL M. DE ARANJUEZ</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -439,7 +432,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 40.00</b> 
+                                    <b>S/ 17.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -448,11 +441,10 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/cuyEspecial.JPG" class="card-img-top img-thumbnail rounded-3" alt="cuyEspecial">
+                        <img src="images/bebidas/vinoQueirolo.jpg" class="card-img-top img-thumbnail rounded-3" alt="vinoQueirolo">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>CUY ESPECIAL</b></h5>
-                                <p class="card-text">Cuy de 800 g a 1 kg, papa, choclo, col, arbeja, aliño transparente.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>VINO QUEIROLO ROSE</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -465,7 +457,32 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 43.00</b> 
+                                    <b>S/ 25.00</b> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-info rounded-3">
+                        <img src="images/bebidas/vinoTaberneroTinto.jpg" class="card-img-top img-thumbnail rounded-3" alt="vinoTaberneroTinto">
+                        <div class="card-body text-center">
+                            <div class="row pb-2 border-bottom">
+                                <h5 class="card-title tipoLetraEBGaramond"><b>VINO TABERNERO GRAN TINTO</b></h5>
+                                <br>
+                            </div>
+                            <div class="container pb-2 p-2">
+                                <button type="button" class="btn btn-success rounded-3 text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    AÑADIR AL CARRITO
+                                </button>
+                            </div>
+                            <div class="row text-end">
+                                <div class="col-6">
+                                    Desde: 
+                                </div>
+                                <div class="col-6">
+                                    <b>S/ 30.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -474,37 +491,10 @@
                 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/cuyCrocante.JPG" class="card-img-top img-thumbnail rounded-3" alt="cuyCrocante">
+                        <img src="images/bebidas/vinoTaberneroBlanco.jpg" class="card-img-top img-thumbnail rounded-3" alt="vinoTaberneroBlanco">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>CUY CROCANTE</b></h5>
-                                <p class="card-text">Cuy, papa, choclo, aji de cilantro, ensalada, especias naturales.</p>
-                                <br>
-                            </div>
-                            <div class="container pb-2 p-2">
-                                <button type="button" class="btn btn-success rounded-3 text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                    AÑADIR AL CARRITO
-                                </button>
-                            </div>
-                            <div class="row text-end">
-                                <div class="col-6">
-                                    Desde: 
-                                </div>
-                                <div class="col-6">
-                                    <b>S/ 43.00</b> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card border-info rounded-3">
-                        <img src="images/platos/tallarinPollo.JPG" class="card-img-top img-thumbnail rounded-3" alt="tallarinPollo">
-                        <div class="card-body text-center">
-                            <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>TALLARIN DE CASA CON POLLO</b></h5>
-                                <p class="card-text">Tallarin de casa, pollo dorado, rocoto relleno, papa a la huancaina.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>VINO TABERNERO BLANCO</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -526,11 +516,10 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/tallarinChicharron.JPG" class="card-img-top img-thumbnail rounded-3" alt="tallarinChicharron">
+                        <img src="images/bebidas/cervezaCristal.jpg" class="card-img-top img-thumbnail rounded-3" alt="cervezaCristal">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>TALLARIN DE CASA CON CHICHARRON</b></h5>
-                                <p class="card-text">Tallarin de casa, chicharron, rocoto relleno, papa a la huancaina.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>CERVEZA CRISTAL</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -543,7 +532,7 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 27.00</b> 
+                                    <b>S/ 8.00</b> 
                                 </div>
                             </div>
                         </div>
@@ -552,11 +541,10 @@
 
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/parrillaPollo.JPG" class="card-img-top img-thumbnail rounded-3" alt="parrillaPollo">
+                        <img src="images/bebidas/cervezaPilsen.jpg" class="card-img-top img-thumbnail rounded-3" alt="cervezaPilsen">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>PECHUGA DE POLLO A LA PARRILLA</b></h5>
-                                <p class="card-text">Filete de pollo 300 g, papa frita, arroz, palta, ensalada, brocoli.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>CERVEZA PILSEN</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -569,20 +557,19 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 25.00</b> 
+                                    <b>S/ 8.50</b> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="col">
                     <div class="card border-info rounded-3">
-                        <img src="images/platos/parillaLomo.JPG" class="card-img-top img-thumbnail rounded-3" alt="parillaLomo">
+                        <img src="images/bebidas/cervezaCusqueña.jpg" class="card-img-top img-thumbnail rounded-3" alt="cervezaCusqueña">
                         <div class="card-body text-center">
                             <div class="row pb-2 border-bottom">
-                                <h5 class="card-title tipoLetraEBGaramond"><b>LOMO FINO A LA PARRILLA</b></h5>
-                                <p class="card-text">Lomo fino 400 g, papa frita, palta, pepino, ensalada, albiño blanco.</p>
+                                <h5 class="card-title tipoLetraEBGaramond"><b>CERVEZA CUSQUEÑA DORADA</b></h5>
                                 <br>
                             </div>
                             <div class="container pb-2 p-2">
@@ -595,17 +582,16 @@
                                     Desde: 
                                 </div>
                                 <div class="col-6">
-                                    <b>S/ 39.00</b> 
+                                    <b>S/ 8.50</b> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
     </main>
-
-    
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

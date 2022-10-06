@@ -21,13 +21,13 @@
     <!--Icono-->  
     <link rel="shortcut icon" type="image/x-icon" href="images/LogoPaginaWeb.JPG">
 </head>
-<body>
+<body class="colorBody">
     <!--BARRA DE NAVEGACIÓN-->
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"> 
-                <img src="/imagenes/logo.PNG" alt="" height="100"> 
+              <a class="navbar-brand" href="index.php"> 
+                <img src="imagenes/logo.PNG" alt="" height="100"> 
               </a>
               
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html" >NOSOTROS</a> 
+                    <a class="nav-link" href="nosotros.php" >NOSOTROS</a> 
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#" data-bs-toggle="modal"  data-bs-target="#reservaEvento">RESERVA DE EVENTOS</a>
@@ -45,9 +45,9 @@
                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#pedirAhora">PEDIR AHORA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                    <a class="nav-link" href="indexConSesion.php#contacto">CONTACTO</a>
                   </li>
-                  <a href="accederCuenta.html">
+                  <a href="accederCuenta.php">
                     <button type="button" class="btn btn-primary btn-lg tipoLetraBoton">INICIAR SESIÓN</button>
                   </a>
                   
@@ -79,7 +79,7 @@
             nuestra página.
             </p>
           </div>
-          <a class="sinSubrayado" href="accederCuenta.html" >
+          <a class="sinSubrayado" href="accederCuenta.php" >
             <div class="d-grid gap-2 col-6 mx-auto">
               <button type="button" class="btn btn-primary letraRoboto negritaLetra botonOvalado" id="acceder" >INICIAR SESIÓN</button> <br>
           </div> 
@@ -108,7 +108,7 @@
             nuestra página.
             </p>
           </div>
-          <a class="sinSubrayado" href="accederCuenta.html" >
+          <a class="sinSubrayado" href="accederCuenta.php" >
             <div class="d-grid gap-2 col-6 mx-auto">
               <button type="button" class="btn btn-primary letraRoboto negritaLetra botonOvalado" id="acceder" >INICIAR SESIÓN</button> <br>
           </div> 
@@ -118,67 +118,78 @@
     </div>
 
 
-    <div class="container">
-        <div class="row">
-            
-            <h3 class="letraEB negritaLetra centrarTexto estiloLetraCuenta">
-                <br>
-                ACCEDER A MI CUENTA
-            </h3>
-        </div>
-
-        <!--Acceder-->
-        <form>
-            <div class="row mb-3 negritaLetra">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Correo Electrónico:</label>
-              <br>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3">
-              </div>
-            </div>
-            <div class="row mb-3 negritaLetra">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña:</label>
-              <br>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3">
-              </div>
-            </div>
-        </form>
-                    
-        <a class="sinSubrayado" href="miCuentaReservas.html">
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="submit" class="btn btn-primary letraRoboto negritaLetra botonOvalado">INICIAR SESIÓN</button>
-            </div>
-        </a>
-
-        <div class="row">
-            
-            <h3 class="letraEB centrarTexto negritaLetra tamañoLetraOlvidaste">
-                <br>
-                ¿Aún no tienes cuenta?
-            </h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col"></div>
-                    <div class="col-lg col-md-12 col-sm-12">
-                        <a class="sinSubrayado" href="registrarCuenta.html">
-                            <div class="d-grid gap-2 col-6 mx-auto">
-                                <button type="submit" class="btn btn-primary letraRoboto negritaLetra botonOvalado">REGISTRARME</button>
-                            </div>
-                        </a>
+    <!--PRESENTACION DE MISION VISION-->
+    <main>
+      <br>
+        <div class="container ">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="imagenes/Restaurante 2.jpg" class="card-img-top" alt="...">
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="imagenes/Restaurante.PNG" class="card-img-top" alt="..."> 
                     </div>
-                    <div class="col"></div>
                 </div>
             </div>
         </div>
+        <br>
+        <div class="container fondoBlanco">
+            <div class="row">
+                <h2 class="centrarTexto negritaTextoNosotros textoNosotros">
+                    "Recreo Ponceca simplemente para estar con la familia" <br>
+                                ¡BIENVENIDOS!
+                </h2>
+            </div>
+    
+            <div class="row ">
+                <h5 class="negritaTextoNosotros textoNosotros">
+                    MISIÓN
+                </h4>
+                <p>
+                    Nuestro compromiso es brindar a nuestros clientes productos alimenticios de calidad, nutritivos y saludables; en un ambiente ecoturístico, acompañado de un excelente servicio, ayudando al desarrollo de nuestros colaboradores y generando valor para nuestros accionistas. <br>
+                </p>
 
+                <h5 class="negritaTextoNosotros textoNosotros">
+                    VISIÓN
+                </h4>
 
-    </div>
+                <p>
+                    Ser líder en nuestro sector a nivel regional siendo la mejor opción a la hora de comer en familia y amigos. <br>
+                </p>
+
+                <h5 class="negritaTextoNosotros textoNosotros">
+                    PRINCIPIOS
+                </h4>
+                <p>
+                    <ul>
+                        <li type="disc">Satisfacción del Cliente: Ofrecer a nuestros clientes una experiencia de servicio positiva a través de nuestros productos, servicios y atención.</li>
+    
+                        <li type="disc">Eficiencia: Cuidar los recursos de la empresa como si fueran los propios.
+                        </li>
+    
+                        <li type="disc">
+                            Transparencia: Actuar de manera abierta, honesta y transparente con tus compañeros y clientes para establecer con ellos relaciones duraderas.</li>
+    
+                        <li type="disc">Disciplina: Ser ordenado y estructurado para aplicar consistentemente los procesos y modelos de trabajo establecidos.</li>
+    
+                        <li type="disc">Trabajo en equipo: Colaborar de manera organizada para alcanzar las metas  del equipo de trabajo.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <br>
+    </main>
+
+    <footer class="footer">
+        <p>Recreo campestre Ponceca Ecoturismo. Todos los derechos reservados 2022.</p> 
+    </footer>
 
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
-    
 </body>
 </html>

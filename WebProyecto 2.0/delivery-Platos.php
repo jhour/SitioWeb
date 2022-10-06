@@ -8,10 +8,7 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!--FUENTE DE LETRA - EB Garamond-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;900&family=Tangerine&display=swap" rel="stylesheet">
+    
 
     <!--codigo para que la página cargue rápido-->
     <link rel="preload" href="interfaz.css" as="style">
@@ -29,8 +26,8 @@
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="indexConSesion.html"> 
-                <img src="/imagenes/logo.PNG" alt="" height="100"> 
+              <a class="navbar-brand" href="indexConSesion.php"> 
+                <img src="imagenes/logo.PNG" alt="" height="100"> 
               </a>
               
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,18 +36,18 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="nosotrosConSesion.html" >NOSOTROS</a> 
+                    <a class="nav-link" href="nosotrosConSesion.php" >NOSOTROS</a> 
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="reservarEventos.html">RESERVA DE EVENTOS</a>
+                    <a class="nav-link" href="reservarEventos.php">RESERVA DE EVENTOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="delivery-Platos.html">PEDIR AHORA</a>
+                    <a class="nav-link" href="delivery-Platos.php">PEDIR AHORA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                    <a class="nav-link" href="indexConSesion.php#contacto">CONTACTO</a>
                   </li>
-                  <a href="miCuentaReservas.html">
+                  <a href="miCuentaReservas.php">
                     <button type="button" class="btn btn-primary btn-lg tipoLetraBoton botonPedirAhora botonPedir radioBoton">MI CUENTA</button>
                   </a>
                   
@@ -67,7 +64,7 @@
                     <div class="row">
                         <div class="col-4 p-0">
                             <div class="d-grid gap-2">
-                                <a class="btn btn-secondary text-white border border-info" href="delivery-Platos.html" role="button">
+                                <a class="btn btn-secondary text-white border border-info" href="delivery-Platos.php" role="button">
                                     <b>Platos</b>
                                     <img src="images/comer.png" class="img-fluid" alt="comer" width="30">
                                 </a>                            
@@ -75,7 +72,7 @@
                         </div>
                         <div class="col-4 p-0 bg-white">
                             <div class="d-grid gap-2">
-                                <a class="btn btn-white border border-info" href="delivery-Entrada.html" role="button">
+                                <a class="btn btn-white border border-info" href="delivery-Entrada.php" role="button">
                                     <b>Entrada</b>
                                     <img src="images/postre.png" class="img-fluid" alt="postre" width="30">
                                 </a>                            
@@ -83,7 +80,7 @@
                         </div>
                         <div class="col-4 p-0 bg-white">
                             <div class="d-grid gap-2">
-                                <a class="btn btn-white border border-info" href="delivery-Bebidas.html" role="button">
+                                <a class="btn btn-white border border-info" href="delivery-Bebidas.php" role="button">
                                     <b>Bebidas</b>
                                     <img src="images/espiritu.png" class="img-fluid" alt="Bebidas" width="30">
                                 </a>                            
@@ -175,7 +172,7 @@
                                 </div>
                             </div>
                             <div class="container text-center">
-                                <a class="btn btn-success rounded-3 border border-info text-white fs-5" href="pagarPedido.html" role="button">
+                                <a class="btn btn-success rounded-3 border border-info text-white fs-5" href="pagarPedido.php" role="button">
                                     <b>¡PAGAR AHORA!</b>
                                 </a> 
                             </div>

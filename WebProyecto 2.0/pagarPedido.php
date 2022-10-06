@@ -8,10 +8,9 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    
 
     <!--codigo para que la página cargue rápido-->
-    <link rel="preload" href="interfaz.css" as="style">
+    <link rel="preload" href="scss/custom.css" as="style">
     <link rel="stylesheet" href="scss/custom.css">
 
     <!--codigo para que la página cargue rápido-->
@@ -26,8 +25,8 @@
     <div>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="indexConSesion.html"> 
-                <img src="/imagenes/logo.PNG" alt="" height="100"> 
+              <a class="navbar-brand" href="indexConSesion.php"> 
+                <img src="imagenes/logo.PNG" alt="" height="100"> 
               </a>
               
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,18 +35,18 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="nosotrosConSesion.html" >NOSOTROS</a> 
+                    <a class="nav-link" href="nosotrosConSesion.php" >NOSOTROS</a> 
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="reservarEventos.html">RESERVA DE EVENTOS</a>
+                    <a class="nav-link" href="reservarEventos.php">RESERVA DE EVENTOS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="delivery-Platos.html">PEDIR AHORA</a>
+                    <a class="nav-link" href="delivery-Platos.php">PEDIR AHORA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                    <a class="nav-link" href="indexConSesion.php#contacto">CONTACTO</a>
                   </li>
-                  <a href="miCuentaReservas.html">
+                  <a href="miCuentaReservas.php">
                     <button type="button" class="btn btn-primary btn-lg tipoLetraBoton botonPedirAhora botonPedir radioBoton">MI CUENTA</button>
                   </a>
                   
@@ -62,7 +61,7 @@
                 <div class="row align-items-center justify-content-between pb-2">
                     <div class="col-12 col-md-4">
                         <div class="d-grid gap-2">
-                            <a class="btn btn-success text-white" href="delivery-Platos.html" role="button">
+                            <a class="btn btn-success text-white" href="delivery-Platos.php" role="button">
                                 <b>Volver a la Compra</b>
                             </a>
                         </div>    
@@ -138,10 +137,10 @@
                                             <div class="modal-footer">
                                                 <div class="row">
                                                     <div class="col-12 col-md-6">
-                                                        <a class="btn btn-ponceca1 text-white" href="indexConSesion.html" role="button">VOLVER A LA PÁGINA PRINCIPAL</a>
+                                                        <a class="btn btn-ponceca1 text-white" href="indexConSesion.php" role="button">VOLVER A LA PÁGINA PRINCIPAL</a>
                                                     </div>
                                                     <div class="col-12 col-md-6">
-                                                        <a href="miCuentaReservas.html">
+                                                        <a href="miCuentaReservas.php">
                                                             <button type="button" class="btn btn-ponceca1 text-white" >VER MI RESERVA</button>
                                                         </a>
                                                     </div>

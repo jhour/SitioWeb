@@ -1,0 +1,41 @@
+LISTA DE REQUERIMIENTOS:
+
+INICIAR SESIÓN
+1) Validar iniciar sesión.
+2) Si no tiene cuenta, que se pueda registrar y luego que inicie sesión.
+
+---------CLIENTE--------------
+MIS RESERVAS
+1) Lista de reservas por usuario.
+
+PERFIL
+1) Observar los datos del usuario
+
+RESERVA DE EVENTOS
+1) Registrar el evento a reservar de acuerdo a los datos requeridos
+Seleccionar evento --> Elegir fecha y hora (no importa si se cruza o no)  --> ¿Desea reservar comida?  --si--> registrar los productos (platos, entrada y bebidas)--> los productos deben aparecer en carrito de compras --> Resumen de la reserva
+													--no-->  Resumen de la reserva
+
+PEDIR AHORA
+1) Registrar los datos de los productos deseados. 
+Registrar los productos (platos, entrada y bebidas)--> los productos deben aparecer en carrito de compras --> Resumen de la reserva
+
+
+---------ADMI-------------
+
+ACTUALIZAR CARTA
+1) Agregar, actualizar y eliminar los productos que la empresa brinda.
+
+ACTUALIZAR EVENTOS
+1) Agregar, actualizar y eliminar los eventos que la empresa brinda.
+
+VER RESERVAS
+1) Buscar reservas de acuerdo a la fecha
+2) Eliminar (visualmente, no de la bd) la reserva.
+
+VER DELIVERY
+1) Buscar delivery de acuerdo a la fecha
+2) Eliminar (visualmente, no de la bd) el pedido.
+
+
+
