@@ -1,0 +1,38 @@
+$ponceca1:  #7CB342;
+$secondary: #57A639;
+$info:      #9C9C9C;
+$warning:   #E7EBDA;
+$success:   #FF240D;
+$primary:     #45BFDB;
+
+$font-family-sans-serif: "Roboto", "EB Garamond","Tangerine";
+$border-radius-lg: 1.25rem;
+
+.tipoLetraEBGaramond{
+    font-family: 'EB Garamond';
+}
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@include media-breakpoint-only(sm){
+    .carta > h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@include media-breakpoint-only(md){
+    .carta > h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@include media-breakpoint-only(lg){
+    .carta > h1{
+        font-size: 90px;
+        line-height: 30px;
+    }
+}
