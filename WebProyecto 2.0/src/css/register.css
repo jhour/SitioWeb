@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*HTML y BODY*/
+html{
+    height: 140%;
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #b5ffff 0%, #b47cff 100%);
+}
+
+/*CONTENEDOR*/
+
+.container{
+    height: 45em;
+    width: 70em;
+    margin: 5em auto;
+    padding: 0;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*BOTON REGRESAR*/
+#btn-Regresar{
+    background-color: #b47cff;
+    border: none;
+}
+
+/*ZONA IMAGEN*/
+
+.content-left{
+    width: 50%;
+    padding-top: 0;
+}
+
+/*REGISTRO*/
+
+.content-right{
+    width: 50%;
+    padding: 0 auto ;
+    background-color: aliceblue;
+    border: 2px solid red;
+    height: 45em;
+}
+
+h1{
+    margin: 0;
+    padding: 1em;
+}
