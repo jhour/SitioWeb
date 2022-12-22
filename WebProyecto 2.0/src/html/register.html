@@ -44,24 +44,23 @@
             <h1>Registro</h1>
             <form class="inputs-container">
                 <h2>Nombres:</h2>
-                <input type="text" class=form-control" id=inputNombre" >
+                <input type="text" class="input" id="inputNombre" >
                 <h2>Apellidos:</h2>
-                <input type="text" class=form-control" id=inputApellido"> 
+                <input type="text" class="inputl" id="inputApellido"> 
                 <h2>DNI:</h2>
-                <input type="tel" class=form-control" id=inputApellido" pattern="[0-9]{9}">
+                <input type="tel" class="input" id="inputApellido" pattern="[0-9]{8}">
                 
                 <h2>Género:</h2>
-                    <input type="radio" class=form-control" id="inputGeneroMasculino" value="Masculino">
-                    <label for="inputGeneroMasculino">Masculino</label>
-                    <input type="radio" class=form-control" id="inputGeneroFemenino" value="Femenino">                
-                    <label for="inputGeneroFemenino">Femenino</label>
-                    <input type="radio" class=form-control" id="inputGeneroOtro" value="Otro"> 
-                    <label for="inputGeneroOtro">Otro</label>
-                
+                <select name="genero" id="selectGenero">
+                    <option value="No seleccionar">No seleccionar...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
                 <h2>Email:</h2>
-                <input type="email" class=form-control" id=inputEmail">
+                <input type="email" class="input" id=inputEmail">
                 <h2>Contraseña:</h2>
-                <input type="password" class=form-control" id=inputContraseña">
+                <input type="password" class="input" id=inputContraseña">
                 <br>
                 <a href="../html/indexSesion.html" clas="btn-CrearCuenta">
                     <button type="submit" id="btn-CrearCuenta" class="btn btn-primary letraRoboto negritaLetra botonOvalado">Crear Cuenta</button>

@@ -42,13 +42,58 @@ body{
 
 .content-right{
     width: 50%;
+    height: 45em;
     padding: 0 auto ;
     background-color: aliceblue;
-    border: 2px solid red;
-    height: 45em;
+    
 }
 
 h1{
     margin: 0;
-    padding: 1em;
+    padding: 0.5em;
+}
+
+.inputs-container{
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+#selectGenero {
+    height: 30px;
+    width: 60%;
+    background-color: #ffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+}
+
+#selectGenero:hover {
+    border: 1px solid rgb(52, 218, 162);
+}
+
+
+
+h2{
+    width: 68%;
+    font-size: 16px;
+    margin: 0;
+    padding: 3px;
+    text-align: left;
+}
+
+input{
+    height: 33px;
+    width: 70%;
+    border-radius: 5px ;
+    border:1px solid #ced4da;
+}
+
+input:hover{
+    border: 1px solid rgb(52, 218, 162);
 }
