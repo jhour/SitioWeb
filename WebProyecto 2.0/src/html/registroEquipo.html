@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Servicios</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--FUENTE DE LETRA - EB Garamond-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;900&family=Tangerine&display=swap" rel="stylesheet">
+
+    <!--codigo para que la página cargue rápido-->
+    <link rel="preload" href="../css/registroEquipo.css" as="style">
+    <link href="../css/registroEquipo.css" rel="stylesheet">
+
+    <!--Icono-->  
+    <link rel="shortcut icon" type="image/x-icon" href="images/LogoPaginaWeb.JPG">
+
+</head>
+
+<body>
+
+<header>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"> 
+                <img src="../../imagenes/logoInforvisur.png" alt="logoInfovisur"> 
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" >NOSOTROS</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/registroEquipo.html" data-bs-toggle="modal"  data-bs-target="#reservaServicio">RESERVA DE SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#estadoEquipo">ESTADO DE MI EQUIPO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                </li>
+                <a href="#">
+                    <button type="button" id="buttonMiCuenta" class="btn btn-primary btn-lg tipoLetraBoton">MI CUENTA</button>
+                </a>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+</header> 
+
+<h1>Reserva de Servicios de Reparación y/o Mantenimiento de Equipos</h1>
+<div class="container"> 
+    <div class="content-date">
+        <div class="cardDate">
+            <h2>Escoja la fecha de su reserva:</h2>
+            <input type="date" name="" id=""">
+        </div>
+        <div class="cardHour">
+            <h2>Escoja la hora:</h2>
+            <table class="tableHour">
+                <thead>
+                    <tr>
+                        <td class="letters">Hora Inicio:</td>
+                        <td class="selects"> 
+                            <select name="selectHora" class="selectHora" id="selectHoraInicial">
+                                <option value="1">8:00</option>
+                                <option value="2">9:00</option>
+                                <option value="3">10:00</option>
+                                <option value="4">11:00</option>
+                                <option value="5">12:00</option>
+                                <option value="6">13:00</option>
+                                <option value="7">14:00</option>
+                                <option value="8">15:00</option>
+                                <option value="9">16:00</option>
+                                <option value="10">17:00</option>
+                                <option value="11">18:00</option>
+                            </select>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="letters">Hora Fin:</td>
+                        <td class="selects">
+                            <select name="selectHora" class="selectHora" id="selectHoraFinal">
+                                <option value="2-2">9:00</option>
+                                <option value="3-3">10:00</option>
+                                <option value="4-4">11:00</option>
+                                <option value="5-5">12:00</option>
+                                <option value="6-6">13:00</option>
+                                <option value="7-7">14:00</option>
+                                <option value="8-8">15:00</option>
+                                <option value="9-9">16:00</option>
+                                <option value="10-10">17:00</option>
+                                <option value="11-11">18:00</option>
+                                <option value="12-12">19:00</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <form class="row g-3">
+        <p class="title-Form">Especificaciones del Equipo</p>
+        <div class="col-md-5">
+            <label for="inputState" class="form-label">Tipo de Servicios:</label>
+            <select class="form-select" id="inputState">
+                <option value="1">Mantenimiento</option>
+                <option value="2">Revision General</option>
+                <option value="3">Cambio de tinta</option>
+                <option value="4">Cambio de componente</option>
+                <option value="5">Chequeo de drivers</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="form-label"> </label>
+        </div>
+        <div class="col-md-5">
+            <label for="inputState" class="form-label">Tipo de equipo:</label>
+            <select class="form-select" id="inputState">
+                <option value="1-1">Computadora</option>
+                <option value="2-2">Laptop</option>
+                <option value="3-3">Impresora</option>
+                <option value="4-4">Memoria externa</option>
+                <option value="5-5">Parlantes</option>
+                <option value="6-6">Mouse</option>
+                <option value="7-7">Teclado</option>
+                <option value="6-6">Componentes</option>
+            </select>
+        </div>
+        <div class="col-md-12">
+            <label class="form-label">Medidas de la pantalla:</label>
+        </div>
+        <div class="col-md-1">
+            <label class="form-label"></label>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Ancho:</label>
+            <input type="number" class="form-control" placeholder="96.4" step="any">
+        </div>
+        <div class="col-md-2">
+            <label class="form-label"></label>
+        </div>
+        <div class="col-md-5">
+            <label class="form-label">Alto:</label>
+            <input type="number" class="form-control" placeholder="50.4" step="any">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Marca del equipo:</label>
+            <input type="text" class="form-control" placeholder="EPSON">
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">Modelo del equipo:</label>
+            <input type="text" class="form-control" placeholder="L220">
+        </div>
+        <div class="col-12">
+            <a href="#" class="buttonEnviar">
+                <button type="submit" id="buttonEnviar">Enviar</button>
+            </a>
+        </div>
+    </form>    
+</div>
+
+<footer>
+    
+</footer>
+
+</body>

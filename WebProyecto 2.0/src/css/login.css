@@ -131,13 +131,13 @@ body{
 }
 
 .btn-IniciarSesion{
-    width: 43%;    
+    width: 50%;    
     height: 41px;
     padding: 0;
 }
 
 .btn-Registrarse{
-    width: 37%;    
+    width: 43%;    
     height: 41px;
     padding: 0;
     
@@ -156,20 +156,23 @@ span{
 
 
 #btn-IniciarSesion{
-    width: 100%;
+    width: 95%;
     height: 41px;
     padding: 0;
+    margin: 1px;
     letter-spacing: 1px;
     background-color: #80d8ff;
     border: white;
     color: rgb(27, 31, 30);
     cursor: pointer;
+    
 }
 
 #btn-Registrarse{
-    width: 100%;    
+    width: 95%;    
     height: 41px;
     padding: 0;
+    margin: 1px;
     letter-spacing: 1px;
     background-color: #80d8ff;
     border: white;
