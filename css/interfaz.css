@@ -1,0 +1,317 @@
+
+:root{ /*es un pseudo-elementos (no existe en el htlm) - conocido como variables de css*/
+    --blanco : #ffffff;
+    --oscuro : #060606;
+    --naranja : #FF240D;
+    --celeste : #45BFDB;
+    --verde: #7CB342;
+    --verdeFondo: #E7EBDA;
+    --amarillo: #ffc400;
+    --grisClaro: #D9D9D9;
+    --gris: #969696;
+    --grisOscuro: #465942;
+    --celesteNarra : #80d8ff;
+    --moradoBoton : #C241FF;
+    --moradoSuave : #cca4dfc9;
+    --moradoTabla : #be6de4b7;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+
+.botonOvalado{
+    border-radius: 3rem;
+}
+
+/*BARRA DE NAVEGACIÓN*/
+
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--blanco);
+    padding-right: 6rem;
+    padding-left: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl{
+    background-color: var(--celesteNarra);
+    
+}
+
+.navbar{
+    padding:0;
+}
+
+
+
+
+.btn{
+    border: solid var(--moradoBoton);
+    
+}
+
+.sinSubrayado{
+    text-decoration: none;
+}
+
+/*BANNER*/
+
+.banner{
+    background-image: url(imagenes/principal3.2.jpg);
+    background-repeat: no-repeat;  /*es para que la imagen de no repita varias veces para rellenar la pantalla*/
+    background-size: cover; /*es para rellenar con una imagen todo el ancho de la pantalla*/
+    height: 305px;
+    /*padding: 20px;  el padding afecta al poner la nitidez en la imagen*/
+    position: relative; /*clase padre debe ser relativo para que actue como un mapa (imagen)*/
+    margin-bottom: 2rem;
+}
+
+.contenido-banner{
+    position: absolute;/*clase hija debe ser absoluta para que use las coordenadas del mapa (imagen)*/
+    /*background-color: rgba(0,0,0, .7); Uso antiguo, usado para cambiar la tonalidad de la imagen (red, green, blue, nitidez)*/
+    /*background-color: rgb(0 0 0 / 70%);  Actual, este método es el mismo que el anterior*/
+    width: 100%;
+    height: 100%;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Alienacion horizontal*/
+    justify-content: center;  /*Alineacion vertical*/
+}
+
+.col-5{
+    background-color: rgb(0 0 0 / 70%);
+}
+
+/*PRESENTACIÓN*/
+.imagen{
+    background-image: url(imagenes/presentacion2.jpg);
+    background-repeat: no-repeat;  /*es para que la imagen de no repita varias veces para rellenar la pantalla*/
+    background-size: contain; /*es para rellenar con una imagen todo el ancho de la pantalla*/
+    max-height:400px;
+    min-height:250px;
+    width: 100%;
+    /*padding: 20px;  el padding afecta al poner la nitidez en la imagen*/
+    position: relative; /*clase padre debe ser relativo para que actue como un mapa (imagen)*/
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formatoTitulo{
+    font-family: 'EB Garamond', serif;
+    color: var(--celesteNarra);
+    text-align:center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+/*ARTICLE*/
+.formatoImagen{
+    background-repeat: no-repeat;  /*es para que la imagen de no repita varias veces para rellenar la pantalla*/
+    background-size: contain; /*es para rellenar con una imagen todo el ancho de la pantalla*/
+    height:383px;
+    width: 100%;
+
+    /*padding: 20px;  el padding afecta al poner la nitidez en la imagen*/
+    position: relative; /*clase padre debe ser relativo para que actue como un mapa (imagen)*/
+    margin-bottom: 2rem;
+}
+
+.formatoLetraImagen{
+    font-family: 'EB Garamond', serif;
+    background-color: rgb(0 0 0 / 70%);;
+    border: 1px solid;
+    padding: 2px 5px;
+    font-size: x-large;
+
+    /*
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1.5px var(--celeste);
+    color: var(--blanco);
+    */
+}
+
+/*FOOTER*/
+.footer{
+    background-color: var(--verde);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--blanco);
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.tipoLetraBoton{
+    font-family: 'EB Garamond';
+    font-size: medium;
+}
+
+
+/*VENTANA EMERGENTE*/
+
+.centrarTexto {
+    text-align:center;
+  }
+.textoNosotros{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.negritaTextoNosotros{
+    font-weight: 900;
+}
+
+.fondoBlanco{
+    background-color: var(--blanco);
+    padding: 2rem;
+}
+
+.tamañoLetraCuerpo{
+    font-size: large;
+}
+
+.tamañoLetraTitulo{
+    font-size: xx-large;
+}
+
+.formatoInformacion{
+    font-family: 'EB Garamond', sans-serif;
+    font-weight: bold;
+    color: var(--naranja);
+}
+
+/*RESERVAR EVENTOS*/
+.tituloReservarEvento{
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+}
+
+.letrasDescripcion{
+    font-family: 'Roboto', sans-serif;
+}
+
+.tamañoBotonReservar{
+    font-size: large;
+}
+
+.colorBoton{
+    background-color: var(--naranja);
+    --bs-btn-hover-bg: var(--naranja);
+    --bs-btn-hover-border-color: var(--blanco);
+}
+
+.colorBoton:hover{
+    background-color: var(--naranja);
+}
+
+.colorBody{
+    background-color: var(--verdeFondo);
+}
+
+
+.ancharBoton{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.letraEB{
+    font-family: 'EB Garamond', serif;
+}
+.letraRoboto{
+    font-family: 'Roboto', sans-serif;
+}
+.negritaLetra{
+    font-weight: bold;
+}
+
+/*acceder a cuenta*/
+.estiloLetraCuenta{
+    color: var(--celeste);
+}
+
+.estiloBotonSesio{
+    font-size: x-large;
+}
+
+.tamañoLetraOlvidaste{
+    font-size: large;
+}
+
+.tamañoLetraRegistrar{
+    font-size: xx-large;
+}
+
+/*RESERVAR CUENTA*/
+.colorBotonSecundario{
+    background-color: var(--gris);
+    --bs-btn-hover-bg: var(--naranja);
+    --bs-btn-hover-border-color: var(--blanco);
+}
+
+/*ADMINISTRADOR*/
+.tipoLetraAdmi{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--blanco);
+    text-align: center;
+    padding-top: 1rem;
+    font-size: medium;
+}
+@media (min-width: 550px){
+    .tipoLetraAdmi{
+        font-size: x-large;
+    }
+}
+
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+  }
+
+.tamañoLetraActualiarPlato{
+    font-size: large;
+}
+
+.bordenBoton{
+    border-color: var(--celeste);
+    border-width: 0.5rem;
+    
+}
+
+.table-rwd-Administrador{
+    background-color: var(--celeste);
+}
+
+.botonLetraActualizar{
+    font-size: x-small;
+}
+
+.check {
+    width:20px;
+    height:20px;
+    margin-left: 2.5rem;
+}
+
+/*Boton mi cuenta*/
+.botonPedirAhora:hover {
+    color: var(--blanco);
+    background-color: var(--verde);
+    border-color: var(--verde);
+  }
+.botonPedir:hover {
+    color: var(--blanco);
+    border-color: var(--blanco);
+}
+
+.radioBoton{
+    border-radius: 0.375rem;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORVISUR</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--FUENTE DE LETRA - EB Garamond-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;900&family=Tangerine&display=swap" rel="stylesheet">
+
+    <!--codigo para que la página cargue rápido-->
+        <!--codigo para que la página cargue rápido-->
+    <link rel="preload" href="/css/estadoEquipo.css" as="style">
+    <link href="/css/estadoEquipo.css" rel="stylesheet">
+    <link rel="preload" href="/css/interfaz.css" as="style">
+    <link href="/css/interfaz.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css"/>
+
+    <!--Icono-->  
+    <link rel="shortcut icon" type="image/x-icon" href="/imagenes/logoInforvisur.png">
+</head>
+<body>
+    
+  <header>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="indexSesion.html"> 
+                <img src="/imagenes/logoInforvisur.png" alt="logoInfovisur"> 
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" >NOSOTROS</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registroEquipo.html" data-bs-toggle="modal"  data-bs-target="#reservaServicio">RESERVA DE SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#estadoEquipo">PAGO POR RESERVA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#estadoEquipo">ESTADO DE MI EQUIPO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">CONTACTO</a>
+                </li>
+                <a href="#">
+                    <button type="button" id="buttonMiCuenta" class="btn btn-primary btn-lg tipoLetraBoton">MI CUENTA</button>
+                </a>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <br><br>
+        <div class="container">
+            <div class="col">
+               
+                <div class="row">
+                    <div class="col">
+                        <h5 class="form-control bordenBoton card-title centrarTexto negritaTextoNosotros letraEB negritaLetra centrarTexto tamañoLetraActualiarPlato">ESTADO DE MI EQUIPO</h5>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <br>
+      <div class="container">
+        <div class="table-container ">
+            <table class="table-rwd">
+              <tr>
+                <th></th>
+                <th>TIPO DE SERVICIO</th>
+                <th>TIPO DE EQUIPO</th>
+                <th>MEDIDAS EN PULGADAS</th>
+                <th>MARCA DE EQUIPO</th>
+                <th>MODELO DE EQUIPO</th>
+                <th>DESCRIPCIÓN DE PROBLEMA</th>
+                <th>IMPORTE (S/.)</th>
+                <th>ESTADO</th>
+              </tr>
+              <tr>
+                <td style='width:5px'>1</td>
+                <td>Mantenimiento</td>
+                <td>Impresora</td>
+                <td></td>
+                <td>EPSON</td>
+                <td>L3610</td>
+                <td>La impresora no imprime tinta negra debido a que los tubos se encuentran obstruidos.</td>
+                <td>50</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td style='width:5px'>2</td>
+                <td>Mantenimiento</td>
+                <td>Monitor</td>
+                <td>24"</td>
+                <td>Samsung</td>
+                <td>C323</td>
+                <td>El monitor no enciende</td>
+                <td>120</td>
+                <td></td>
+              </tr>
+
+            <!-- 
+              <tr>
+                <td>5</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr> -->
+          </table>  
+        </div>
+       <br>
+      </div> 
+    </main>
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

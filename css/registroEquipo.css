@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html{
+    height: 150%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f2d7ff81;
+    width: 100vw;
+}
+/* HEADER*/
+.navbar-expand-lg .navbar-nav .nav-item .nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(47, 55, 65);
+    padding-right: 6rem;
+    padding-left: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar{
+    padding: 0;
+}
+.navbar-expand-lg .navbar-brand .logoInfovisur{
+        height: 50%;
+        width: 50%;
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl{
+    background-color: #80d8ff;
+    
+}
+
+
+
+.btn-primary{
+    font-weight: bold;
+    border: none;
+    color: rgb(47, 55, 65);
+    background-color: #C241FF;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+#buttonMiCuenta:hover{
+    background: #C241FF;
+    border: 2px solid C241FF;
+    color: black;
+    
+}
+
+/*BODY*/
+
+/*TITLE*/
+
+h1{
+    font-size: 30px;
+    padding: 2rem;
+    margin: 0 auto;
+    letter-spacing: 1.2px;
+    text-align: center;
+    width: 80%;
+}
+
+/*CONTENT DATE*/
+
+.content-date{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.cardDate{
+    height: 10em;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ba9fc7;
+    border-radius: 10px;    
+    background-color: white;
+}
+
+.cardHour{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ba9fc7;
+    border-radius: 10px;
+    background-color: white;
+}
+h2{
+    font-size: 18px;
+    padding: 23px 40px 15px;
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+
+.cardDate input{
+    width: 70%;
+    padding: 15px;
+    margin-left: 40px;
+    border-radius: 4px;
+    border:1px solid #ced4da;
+}
+.cardDate input:hover{
+    border: 1px solid #d7b8e6;
+}
+
+.tableHour{
+    width: 20rem;    
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.letters{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.selects{
+    padding: 5px;
+}
+
+.selectHora{
+    border-radius: 2px;
+    border:1px solid #ced4da;
+}
+
+.selectHora:hover{
+    border: 1px solid #d7b8e6;
+}
+
+/*ESPECIFICACIONES DEL EQUIPO*/
+
+.row.g-3{
+    width: 98%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border: 1px solid #ba9fc7;
+    border-radius: 10px;    
+    background-color: white;
+}
+
+
+.form-label{
+    font-size: 16px;
+    margin: 0;
+    padding: 5px;
+}
+
+.title-Form{
+    font-size: 21px;
+    margin: 0;
+    letter-spacing: 1.5px;    
+    font: bold;
+}
+
+.col-md-4, .col-md-1, .col-md-2, .col-md-3, .col-md-5, .col-md-6, .col-md-12, .col-12{
+    margin: 0;
+    padding: 5px;
+}
+
+p{
+    margin: 0;
+    padding: 10px;
+}
+
+.form-select{
+    border:1px solid #ced4da;
+}
+
+.form-select:hover{
+    border: 1px solid #d7b8e6;
+}
+
+.form-control{
+    border:1px solid #ced4da;
+}
+
+.form-control:hover{
+    border: 1px solid #d7b8e6;
+}
+
+.col-12{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#buttonEnviar{
+    width: 81px;    
+    height: 41px;
+    padding: 0;
+    letter-spacing: 1px;
+    background-color: #80d8ff;
+    border-radius: 5px;
+    border: none;
+    color: rgb(27, 31, 30);
+    cursor: pointer;
+}
+
+#buttonEnviar:hover{
+    cursor: pointer;
+}
