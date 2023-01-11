@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--FUENTE DE LETRA - EB Garamond-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;900&family=Tangerine&display=swap" rel="stylesheet">
+
+    <!--codigo para que la página cargue rápido-->
+    <link rel="preload" href="../css/login.css" as="style">
+    <link href="../css/login.css" rel="stylesheet">
+
+    <!--Icono-->  
+    <link rel="shortcut icon" type="image/x-icon" href="images/LogoPaginaWeb.JPG">
+
+</head>
+
+<body>
+    <div class="button">
+        <ul class="navbar-nav">
+            <li class="buttonReturn">
+                <a href="../html/index.html" class="btn-Regresar">
+                    <button type="button" id="btn-Regresar">
+                        <img src="../../imagenes/iconoRegresar.png" alt="">
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        
+        <div class="content-left" id="zonaLogeo">
+            <div class="logo">
+                <img src="../../imagenes/logoInforvisurLogin.png" alt="logoInfovisur">
+            </div>
+            <form class="inputs-container">
+                <h1>Email:</h1>
+                <input type="email" class="form-control" id="inputEmail">
+                <h1>Contraseña: </h1>
+                <input type="password" class="form-control" id="inputContraseña">
+                <a href="../html/indexSesion.html" class="btn-IniciarSesion">
+                    <button type="button" id="btn-IniciarSesion" class="btn btn-primary letraRoboto negritaLetra botonOvalado">INICIAR SESIÓN</button>
+                </a>
+                <p> Aun no está registrado? </p>
+                <a href="../html/register.html" class="btn-Registrarse">
+                    <button type="button" id="btn-Registrarse" class="btn btn-primary letraRoboto negritaLetra botonOvalado">REGISTRARME</button>
+                </a>
+                <p> Olvido su contraseña? <span class="span">Click aquí</span></p>
+            </form>
+        </div>
+        
+        <img class="content-right" src="../../imagenes/imagenLogin.svg" alt="">
+        
+    </div>
+    
+</body>

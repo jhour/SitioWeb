@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html{
+    height: 150%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f2d7ff81;
+    width: 100vw;
+}
+/* HEADER*/
+.navbar-expand-lg .navbar-nav .nav-item .nav-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(47, 55, 65);
+    padding-right: 6rem;
+    padding-left: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    min-height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar{
+    padding: 0;
+}
+.navbar-expand-lg .navbar-brand .logoInfovisur{
+        height: 50%;
+        width: 50%;
+}
+
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl{
+    background-color: #80d8ff;
+    
+}
+
+
+
+.btn-primary{
+    font-weight: bold;
+    border: none;
+    color: rgb(47, 55, 65);
+    background-color: #C241FF;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+#buttonLogin:hover{
+    background: #C241FF;
+    border: 2px solid C241FF;
+    color: black;
+    
+}
+
+/*BODY*/
+.banner{
+    background-image: url("../../imagenes/principal3.2.jpg");
+    background-repeat: no-repeat;  /*es para que la imagen de no repita varias veces para rellenar la pantalla*/
+    background-size: cover; /*es para rellenar con una imagen todo el ancho de la pantalla*/
+    height: 305px;
+    /*padding: 20px;  el padding afecta al poner la nitidez en la imagen*/
+    position: relative; /*clase padre debe ser relativo para que actue como un mapa (imagen)*/
+    margin-bottom: 2rem;
+}
+
+.imagen{
+    background-image: url("../../imagenes/presentacion2.jpg");
+    background-repeat: no-repeat;  /*es para que la imagen de no repita varias veces para rellenar la pantalla*/
+    background-size: contain; /*es para rellenar con una imagen todo el ancho de la pantalla*/
+    max-height:400px;
+    min-height:250px;
+    width: 100%;
+    /*padding: 20px;  el padding afecta al poner la nitidez en la imagen*/
+    position: relative; /*clase padre debe ser relativo para que actue como un mapa (imagen)*/
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    padding: 5px;
+    margin: 0;
+}
+.row{
+    padding-top: 30px;
+}
+
+.col-5{
+    padding: 15px;
+    color: antiquewhite;
+    background-color: rgb(0 0 0 / 70%);
+}
+/*FOOTER*/
+.footer{
+    background-color: #80d8ff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(47, 55, 65);
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}

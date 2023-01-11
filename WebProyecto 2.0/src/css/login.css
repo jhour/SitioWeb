@@ -1,0 +1,234 @@
+/*ALTURA 100%*/
+/*
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+}
+
+.content-left {
+    height:auto;
+    min-height:100vh;
+    float:left;
+    width:auto;
+    position:relative;
+}
+
+.content-right{
+    background-image: url("../../imagenes/tecnicoLogin.svg");
+    /*background-color: antiquewhite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:100vh;
+    min-height:100%;
+    position:relative;
+}
+
+#zonaLogeo {
+    background: blue;
+    width:40%;
+    position:relative;
+    float:left;
+}
+
+#zonaImagen {
+    width:60%;
+    float:left;
+    position:relative; 
+}*/
+
+/*LOGO*/
+/*
+.content-left .logo{
+    position:relative;
+    width:150px;
+    height:150px;
+}
+.content-left .logo .logoInfovisur{
+    position:absolute; 
+    width:100px;
+    top:25%;
+    right:0; 
+    left:0; 
+    margin:0 auto;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*HTML y BODY*/
+html{
+    height: 140%;
+}
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #b5ffff 0%, #b47cff 100%);
+}
+
+
+/*CONTAINER*/
+.container{
+    height: 45em;
+    width: 70em;
+    margin: 5em auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/*BUTTON RETURN*/
+#btn-Regresar{
+    background-color: #b47cff;
+    border: none;
+}
+
+/*LOGIN*/
+
+.content-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.5rem;
+    background-color: aliceblue;
+}
+
+.content-left .logo{
+    height: 130px;
+    width: 125px;
+    margin: 0.8em auto;
+}
+
+.content-left .inputs-container{
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-left .inputs-container h1{
+    font-size: 16px;
+    margin: 0 auto;
+    width: 81%;
+    display: flex;
+}
+
+.content-left .inputs-container p{
+    font-size: 13.5px;    
+    margin: 0 auto;
+}
+
+.content-left .inputs-container input{
+    width: 85%;
+}
+
+.btn-IniciarSesion{
+    width: 50%;    
+    height: 41px;
+    padding: 0;
+}
+
+.btn-Registrarse{
+    width: 43%;    
+    height: 41px;
+    padding: 0;
+    
+}
+
+
+
+input:hover{
+    border: 1px solid rgb(52, 218, 162);
+}
+
+span{
+    color: orange;
+    cursor: pointer;
+}
+
+
+#btn-IniciarSesion{
+    width: 95%;
+    height: 41px;
+    padding: 0;
+    margin: 1px;
+    letter-spacing: 1px;
+    background-color: #80d8ff;
+    border: white;
+    color: rgb(27, 31, 30);
+    cursor: pointer;
+    
+}
+
+#btn-Registrarse{
+    width: 95%;    
+    height: 41px;
+    padding: 0;
+    margin: 1px;
+    letter-spacing: 1px;
+    background-color: #80d8ff;
+    border: white;
+    color: rgb(27, 31, 30);
+    cursor: pointer;
+}
+
+
+
+
+/*IMAGEN*/
+
+.content-right{
+    width: 50%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #c6ffc1;
+    box-sizing: border-box;
+}
+
+
+/*responsive*/
+
+@media screen and (max-width: 1000px) {
+    .login-container {
+        width: 70%;
+        margin-top: 3rem;
+    }
+    .login-info-container {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .image-container {
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 650px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-container {
+        height: 90%;
+    }
+
+    .social-login {
+        flex-direction: column;
+        align-items: center;
+        height: 30%;
+    }
+
+    .login-info-container > p {
+        margin: 0;
+    }
+}

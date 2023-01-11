@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--FUENTE DE LETRA - EB Garamond-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;900&family=Tangerine&display=swap" rel="stylesheet">
+
+    <!--codigo para que la página cargue rápido-->
+    <link rel="preload" href="../css/register.css" as="style">
+    <link href="../css/register.css" rel="stylesheet">
+
+    <!--Icono-->  
+    <link rel="shortcut icon" type="image/x-icon" href="images/LogoPaginaWeb.JPG">
+
+</head>
+
+<body>
+    <div class="button">
+        <ul class="navbar-nav">
+            <li class="buttonReturn">
+                <a href="../html/login.html" class="btn-Regresar">
+                    <button type="button" id="btn-Regresar">
+                        <img src="../../imagenes/iconoRegresar.png" alt="">
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <img class="content-left" src="../../imagenes/imagenRegister.svg" alt="">
+
+        <div class="content-right" id="zonaRegistro">
+            <h1>Registro</h1>
+            <form class="inputs-container">
+                <h2>Nombres:</h2>
+                <input type="text" class="input" id="inputNombre" >
+                <h2>Apellidos:</h2>
+                <input type="text" class="inputl" id="inputApellido"> 
+                <h2>DNI:</h2>
+                <input type="tel" class="input" id="inputApellido" pattern="[0-9]{8}">
+                
+                <h2>Género:</h2>
+                <select name="genero" id="selectGenero">
+                    <option value="No seleccionar">No seleccionar...</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <h2>Email:</h2>
+                <input type="email" class="input" id=inputEmail">
+                <h2>Contraseña:</h2>
+                <input type="password" class="input" id=inputContraseña">
+                <br>
+                <a href="../html/indexSesion.html" class="btn-CrearCuenta">
+                    <button type="button" id="btn-CrearCuenta" class="btn btn-primary letraRoboto negritaLetra botonOvalado">Crear Cuenta</button>
+                </a>
+        </div>
+    </div> 
+
+</body>
