@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORVISUR</title>
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!--FUENTE DE LETRA - EB Garamond-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Roboto:wght@100;900&family=Tangerine&display=swap" rel="stylesheet">
+
+    <!--codigo para que la página cargue rápido-->
+        <!--codigo para que la página cargue rápido-->
+    <link rel="preload" href="/css/estadoEquipo.css" as="style">
+    <link href="/css/estadoEquipo.css" rel="stylesheet">
+    <link rel="preload" href="/css/interfaz.css" as="style">
+    <link href="/css/interfaz.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/styles.css"/>
+
+    <!--Icono-->  
+    <link rel="shortcut icon" type="image/x-icon" href="/imagenes/logoInforvisur.png">
+</head>
+<body>
+    
+  <header>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="indexSesion.html"> 
+                <img src="/imagenes/logoInforvisur.png" alt="logoInfovisur"> 
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" >NOSOTROS</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="registroEquipo.html" data-bs-toggle="modal"  data-bs-target="#reservaServicio">RESERVA DE SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#estadoEquipo">PAGO POR RESERVA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#estadoEquipo">CITAS RESERVADAS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#estadoEquipo">ESTADO DE MI EQUIPO</a>
+                </li>
+                <a href="#">
+                    <button type="button" id="buttonMiCuenta" class="btn btn-primary btn-lg tipoLetraBoton">MI CUENTA</button>
+                </a>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <div class="py-5 text-center">
+          <h2 class="card-title centrarTexto negritaTextoNosotros letraEB negritaLetra centrarTexto estiloLetraCuenta">Finaliza tu compra</h2>
+          
+        </div>
+      
+        <div class="row">
+          <div class="col-md-4 order-md-2 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Your cart</span>
+              <span class="badge badge-secondary badge-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (S/.)</span>
+                <strong>$20</strong>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate="">
+      
+              <h4 class="mb-3">Método de pago</h4>
+      
+              <div class="d-block my-3">
+                <div class="custom-control custom-radio">
+                  <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                  <label class="custom-control-label" for="credit">Tarjeta de crédito</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                  <label class="custom-control-label" for="debit">Tarjeta de débito</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                  <label class="custom-control-label" for="paypal">PayPal</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="cc-name">Numero de Tarjeta</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                  <small class="text-muted">Nombre Completo es necesario.</small>
+                  <div class="invalid-feedback">
+                    Nombre de la tarjeta es obligatorio
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="cc-number">Numero de Tarjeta</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Numero de tarjeta es necesario
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <label for="cc-expiration">Expiration</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Fecha de Expiracion es necesario
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="cc-cvv">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Codigo de Seguridad es necesario
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <img src="https://dachx.com/wp-content/uploads/2019/08/Visa-MasterCard-1024x393.png" alt="" width="150px">
+
+              </div>
+              <hr class="mb-4">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Finalizar Transaccion</button>
+            </form>
+          </div>
+        </div>
+      
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+          <p class="mb-1">© 2017-2019 Company Name</p>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+          </ul>
+        </footer>
+      </div>
+</main>
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

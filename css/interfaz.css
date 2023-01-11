@@ -46,7 +46,9 @@ html{
     padding:0;
 }
 
-
+.letraBlanco{
+    color: var(--blanco);
+}
 
 
 .btn{
